@@ -1,0 +1,3 @@
+C:/Users/crist/nyan_keys_right/cmake-build-debug/CMakeFiles/nyan_keys_right.elf.dir
+C:/Users/crist/nyan_keys_right/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/crist/nyan_keys_right/cmake-build-debug/CMakeFiles/rebuild_cache.dir
