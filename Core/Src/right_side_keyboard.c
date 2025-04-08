@@ -87,8 +87,21 @@ void RightKeyboardScan(RightKeyboardState *state)
     for (int i = 0; i < NUM_KEYS; i++) {
         // Read the current state of the key
         GPIO_PinState current_state = HAL_GPIO_ReadPin(KEY_PORTS[i], KEY_PINS[i]);
-
-        // TODO: REWORK DEBOUNCE TIMER TO NOT INTRODUCE DELAY BEFORE TRANSMISSION
+        
+        // Update the key state in the state structure immediately
+        // This ensures we transmit the current physical state without delay
+        int byteIndex = i / 8;
+        int bitIndex = i % 8;
+        
+        if (current_state == GPIO_PIN_RESET) {
+            // Key is pressed (active low), clear the bit (0 = pressed)
+            state->key_states[byteIndex] &= ~(1 << bitIndex);
+        } else {
+            // Key is not pressed, set the bit (1 = not pressed)
+            state->key_states[byteIndex] |= (1 << bitIndex);
+        }
+        
+        // Handle debouncing separately (doesn't affect transmission)
         // If the state changed, reset the debounce timer
         if (current_state != last_key_state[i]) {
             last_debounce_time[i] = current_time;
@@ -99,23 +112,13 @@ void RightKeyboardScan(RightKeyboardState *state)
             // Only update if the debounced state is different
             if (debounced_key_state[i] != current_state) {
                 debounced_key_state[i] = current_state;
+                // Here you could trigger events that should only happen
+                // after debouncing, but not affect the transmitted state
             }
         }
 
         // Save the current state for next comparison
         last_key_state[i] = current_state;
-        
-        // Update the key state in the state structure
-        int byteIndex = i / 8;
-        int bitIndex = i % 8;
-        
-        if (debounced_key_state[i] == GPIO_PIN_RESET) {
-            // Key is pressed (active low), clear the bit (0 = pressed)
-            state->key_states[byteIndex] &= ~(1 << bitIndex);
-        } else {
-            // Key is not pressed, set the bit (1 = not pressed)
-            state->key_states[byteIndex] |= (1 << bitIndex);
-        }
     }
 }
 

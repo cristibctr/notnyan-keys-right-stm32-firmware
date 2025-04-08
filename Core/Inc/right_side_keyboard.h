@@ -24,7 +24,7 @@ typedef struct {
 #define NUM_KEYS 24
 
 // Debounce time in milliseconds
-#define DEBOUNCE_TIME_MS 10
+#define DEBOUNCE_TIME_MS 5
 
 // Function prototypes
 bool RightKeyboardInit(void);
