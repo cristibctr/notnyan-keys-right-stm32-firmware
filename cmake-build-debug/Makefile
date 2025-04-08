@@ -152,6 +152,30 @@ Core/Src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\nyan_keys_right.elf.dir\build.make CMakeFiles/nyan_keys_right.elf.dir/Core/Src/main.c.s
 .PHONY : Core/Src/main.c.s
 
+Core/Src/right_side_keyboard.obj: Core/Src/right_side_keyboard.c.obj
+.PHONY : Core/Src/right_side_keyboard.obj
+
+# target to build an object file
+Core/Src/right_side_keyboard.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\nyan_keys_right.elf.dir\build.make CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.obj
+.PHONY : Core/Src/right_side_keyboard.c.obj
+
+Core/Src/right_side_keyboard.i: Core/Src/right_side_keyboard.c.i
+.PHONY : Core/Src/right_side_keyboard.i
+
+# target to preprocess a source file
+Core/Src/right_side_keyboard.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\nyan_keys_right.elf.dir\build.make CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.i
+.PHONY : Core/Src/right_side_keyboard.c.i
+
+Core/Src/right_side_keyboard.s: Core/Src/right_side_keyboard.c.s
+.PHONY : Core/Src/right_side_keyboard.s
+
+# target to generate assembly for a file
+Core/Src/right_side_keyboard.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\nyan_keys_right.elf.dir\build.make CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.s
+.PHONY : Core/Src/right_side_keyboard.c.s
+
 Core/Src/stm32f4xx_hal_msp.obj: Core/Src/stm32f4xx_hal_msp.c.obj
 .PHONY : Core/Src/stm32f4xx_hal_msp.obj
 
@@ -652,6 +676,9 @@ help:
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s
+	@echo ... Core/Src/right_side_keyboard.obj
+	@echo ... Core/Src/right_side_keyboard.i
+	@echo ... Core/Src/right_side_keyboard.s
 	@echo ... Core/Src/stm32f4xx_hal_msp.obj
 	@echo ... Core/Src/stm32f4xx_hal_msp.i
 	@echo ... Core/Src/stm32f4xx_hal_msp.s

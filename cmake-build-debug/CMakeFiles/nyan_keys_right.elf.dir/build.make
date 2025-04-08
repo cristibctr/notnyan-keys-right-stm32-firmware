@@ -82,10 +82,24 @@ CMakeFiles/nyan_keys_right.elf.dir/Core/Src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/nyan_keys_right.elf.dir/Core/Src/main.c.s"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\crist\nyan_keys_right\Core\Src\main.c -o CMakeFiles\nyan_keys_right.elf.dir\Core\Src\main.c.s
 
+CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
+CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.obj: C:/Users/crist/nyan_keys_right/Core/Src/right_side_keyboard.c
+CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.obj"
+	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Core\Src\right_side_keyboard.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Core\Src\right_side_keyboard.c.obj -c C:\Users\crist\nyan_keys_right\Core\Src\right_side_keyboard.c
+
+CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.i"
+	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\crist\nyan_keys_right\Core\Src\right_side_keyboard.c > CMakeFiles\nyan_keys_right.elf.dir\Core\Src\right_side_keyboard.c.i
+
+CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.s"
+	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\crist\nyan_keys_right\Core\Src\right_side_keyboard.c -o CMakeFiles\nyan_keys_right.elf.dir\Core\Src\right_side_keyboard.c.s
+
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: C:/Users/crist/nyan_keys_right/Core/Src/stm32f4xx_hal_msp.c
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Core\Src\stm32f4xx_hal_msp.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Core\Src\stm32f4xx_hal_msp.c.obj -c C:\Users\crist\nyan_keys_right\Core\Src\stm32f4xx_hal_msp.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_hal_msp.c.i: cmake_force
@@ -99,7 +113,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_hal_msp.c.s: cmake_force
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_it.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_it.c.obj: C:/Users/crist/nyan_keys_right/Core/Src/stm32f4xx_it.c
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_it.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_it.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_it.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Core\Src\stm32f4xx_it.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Core\Src\stm32f4xx_it.c.obj -c C:\Users\crist\nyan_keys_right\Core\Src\stm32f4xx_it.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_it.c.i: cmake_force
@@ -113,7 +127,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_it.c.s: cmake_force
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/syscalls.c.obj: C:/Users/crist/nyan_keys_right/Core/Src/syscalls.c
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Core/Src/syscalls.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Core\Src\syscalls.c.obj -c C:\Users\crist\nyan_keys_right\Core\Src\syscalls.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -127,7 +141,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Core/Src/syscalls.c.s: cmake_force
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/sysmem.c.obj: C:/Users/crist/nyan_keys_right/Core/Src/sysmem.c
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Core/Src/sysmem.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Core\Src\sysmem.c.obj -c C:\Users\crist\nyan_keys_right\Core\Src\sysmem.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/sysmem.c.i: cmake_force
@@ -141,7 +155,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Core/Src/sysmem.c.s: cmake_force
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/system_stm32f4xx.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/system_stm32f4xx.c.obj: C:/Users/crist/nyan_keys_right/Core/Src/system_stm32f4xx.c
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/system_stm32f4xx.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Core/Src/system_stm32f4xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Core/Src/system_stm32f4xx.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Core/Src/system_stm32f4xx.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Core\Src\system_stm32f4xx.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Core\Src\system_stm32f4xx.c.obj -c C:\Users\crist\nyan_keys_right\Core\Src\system_stm32f4xx.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Core/Src/system_stm32f4xx.c.i: cmake_force
@@ -154,7 +168,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Core/Src/system_stm32f4xx.c.s: cmake_force
 
 CMakeFiles/nyan_keys_right.elf.dir/Core/Startup/startup_stm32f411ceux.s.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Core/Startup/startup_stm32f411ceux.s.obj: C:/Users/crist/nyan_keys_right/Core/Startup/startup_stm32f411ceux.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building ASM object CMakeFiles/nyan_keys_right.elf.dir/Core/Startup/startup_stm32f411ceux.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM object CMakeFiles/nyan_keys_right.elf.dir/Core/Startup/startup_stm32f411ceux.s.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\nyan_keys_right.elf.dir\Core\Startup\startup_stm32f411ceux.s.obj -c C:\Users\crist\nyan_keys_right\Core\Startup\startup_stm32f411ceux.s
 
 CMakeFiles/nyan_keys_right.elf.dir/Core/Startup/startup_stm32f411ceux.s.i: cmake_force
@@ -168,7 +182,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Core/Startup/startup_stm32f411ceux.s.s: cmake
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: C:/Users/crist/nyan_keys_right/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c.obj -c C:\Users\crist\nyan_keys_right\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.i: cmake_force
@@ -182,7 +196,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: C:/Users/crist/nyan_keys_right/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c.obj -c C:\Users\crist\nyan_keys_right\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.i: cmake_force
@@ -196,7 +210,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: C:/Users/crist/nyan_keys_right/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c.obj -c C:\Users\crist\nyan_keys_right\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.i: cmake_force
@@ -210,7 +224,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: C:/Users/crist/nyan_keys_right/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c.obj -c C:\Users\crist\nyan_keys_right\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.i: cmake_force
@@ -224,7 +238,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: C:/Users/crist/nyan_keys_right/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c.obj -c C:\Users\crist\nyan_keys_right\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.i: cmake_force
@@ -238,7 +252,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: C:/Users/crist/nyan_keys_right/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c.obj -c C:\Users\crist\nyan_keys_right\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.i: cmake_force
@@ -252,7 +266,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: C:/Users/crist/nyan_keys_right/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c.obj -c C:\Users\crist\nyan_keys_right\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.i: cmake_force
@@ -266,7 +280,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: C:/Users/crist/nyan_keys_right/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c.obj -c C:\Users\crist\nyan_keys_right\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.i: cmake_force
@@ -280,7 +294,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: C:/Users/crist/nyan_keys_right/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c.obj -c C:\Users\crist\nyan_keys_right\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.i: cmake_force
@@ -294,7 +308,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj: C:/Users/crist/nyan_keys_right/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c.obj -c C:\Users\crist\nyan_keys_right\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.i: cmake_force
@@ -308,7 +322,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj: C:/Users/crist/nyan_keys_right/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c.obj -c C:\Users\crist\nyan_keys_right\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.i: cmake_force
@@ -322,7 +336,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: C:/Users/crist/nyan_keys_right/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c.obj -c C:\Users\crist\nyan_keys_right\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.i: cmake_force
@@ -336,7 +350,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: C:/Users/crist/nyan_keys_right/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c.obj -c C:\Users\crist\nyan_keys_right\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.i: cmake_force
@@ -350,7 +364,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: C:/Users/crist/nyan_keys_right/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c.obj -c C:\Users\crist\nyan_keys_right\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.i: cmake_force
@@ -364,7 +378,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: CMakeFiles/nyan_keys_right.elf.dir/flags.make
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: C:/Users/crist/nyan_keys_right/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: CMakeFiles/nyan_keys_right.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
 	C:\PROGRA~2\ARMGNU~2\14EFD8~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj -MF CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c.obj.d -o CMakeFiles\nyan_keys_right.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c.obj -c C:\Users\crist\nyan_keys_right\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
 
 CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.i: cmake_force
@@ -378,6 +392,7 @@ CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 # Object files for target nyan_keys_right.elf
 nyan_keys_right_elf_OBJECTS = \
 "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/main.c.obj" \
+"CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.obj" \
 "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" \
 "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_it.c.obj" \
 "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/syscalls.c.obj" \
@@ -404,6 +419,7 @@ nyan_keys_right_elf_OBJECTS = \
 nyan_keys_right_elf_EXTERNAL_OBJECTS =
 
 nyan_keys_right.elf: CMakeFiles/nyan_keys_right.elf.dir/Core/Src/main.c.obj
+nyan_keys_right.elf: CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.obj
 nyan_keys_right.elf: CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
 nyan_keys_right.elf: CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_it.c.obj
 nyan_keys_right.elf: CMakeFiles/nyan_keys_right.elf.dir/Core/Src/syscalls.c.obj
@@ -427,7 +443,7 @@ nyan_keys_right.elf: CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Dr
 nyan_keys_right.elf: CMakeFiles/nyan_keys_right.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
 nyan_keys_right.elf: CMakeFiles/nyan_keys_right.elf.dir/build.make
 nyan_keys_right.elf: CMakeFiles/nyan_keys_right.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking C executable nyan_keys_right.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\crist\nyan_keys_right\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking C executable nyan_keys_right.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\nyan_keys_right.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building C:/Users/crist/nyan_keys_right/cmake-build-debug/nyan_keys_right.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building C:/Users/crist/nyan_keys_right/cmake-build-debug/nyan_keys_right.bin"

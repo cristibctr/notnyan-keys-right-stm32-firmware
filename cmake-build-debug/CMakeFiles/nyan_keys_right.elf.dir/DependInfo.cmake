@@ -31,6 +31,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/crist/nyan_keys_right/Core/Src/main.c" "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/main.c.obj" "gcc" "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/main.c.obj.d"
+  "C:/Users/crist/nyan_keys_right/Core/Src/right_side_keyboard.c" "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.obj" "gcc" "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.obj.d"
   "C:/Users/crist/nyan_keys_right/Core/Src/stm32f4xx_hal_msp.c" "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" "gcc" "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj.d"
   "C:/Users/crist/nyan_keys_right/Core/Src/stm32f4xx_it.c" "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_it.c.obj" "gcc" "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_it.c.obj.d"
   "C:/Users/crist/nyan_keys_right/Core/Src/syscalls.c" "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/syscalls.c.obj" "gcc" "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/syscalls.c.obj.d"

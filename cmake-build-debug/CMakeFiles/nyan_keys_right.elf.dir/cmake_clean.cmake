@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/main.c.obj"
   "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/main.c.obj.d"
+  "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.obj"
+  "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/right_side_keyboard.c.obj.d"
   "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
   "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj.d"
   "CMakeFiles/nyan_keys_right.elf.dir/Core/Src/stm32f4xx_it.c.obj"
