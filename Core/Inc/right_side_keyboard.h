@@ -29,6 +29,7 @@ typedef struct {
 // Function prototypes
 bool RightKeyboardInit(void);
 void RightKeyboardScan(RightKeyboardState *state);
+void RightKeyboardScan6KRO(RightKeyboardState *state, uint8_t max_keys);
 void RightKeyboardI2CTransmit(void);
 
 #endif /* RIGHT_SIDE_KEYBOARD_H */

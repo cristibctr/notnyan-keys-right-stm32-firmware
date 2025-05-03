@@ -110,7 +110,7 @@ int main(void)
     RightKeyboardState state;
     
     // Scan the keyboard
-    RightKeyboardScan(&state);
+    RightKeyboardScan6KRO(&state, 6);
   }
   /* USER CODE END 3 */
 }

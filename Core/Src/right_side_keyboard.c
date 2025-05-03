@@ -71,30 +71,68 @@ bool RightKeyboardInit(void)
     return true;
 }
 
+/**
+ * Original keyboard scan function - calls the optimized version
+ */
 void RightKeyboardScan(RightKeyboardState *state)
 {
+    // Call the optimized version with no key limit (scan all keys)
+    RightKeyboardScan6KRO(state, 0);
+}
+
+/**
+ * Optimized keyboard scan function with early-exit capability for 6KRO
+ *
+ * @param state Pointer to keyboard state structure to fill
+ * @param max_keys Maximum number of keys to scan for (0 means scan all)
+ */
+void RightKeyboardScan6KRO(RightKeyboardState *state, uint8_t max_keys) {
     if (!state) return;
 
     uint32_t now = HAL_GetTick();
+    uint8_t pressed_count = 0;
 
-    /* start with “all released” */
+    /* start with "all released" */
     memset(state->key_states, 0xFF, sizeof(state->key_states));
 
+    // Optimize port access - cache GPIOx->IDR register values
+    uint32_t gpio_a_state = GPIOA->IDR;
+    uint32_t gpio_b_state = GPIOB->IDR;
+
+    // For each GPIO port (A and B), we'll batch process the keys
+    // This reduces individual HAL_GPIO_ReadPin calls with direct bit testing
     for (int i = 0; i < NUM_KEYS; ++i) {
-        // 1) Sample the raw pin
-        GPIO_PinState raw = HAL_GPIO_ReadPin(KEY_PORTS[i], KEY_PINS[i]);
+        // 1) Sample the raw pin (direct bit testing instead of HAL call)
+        GPIO_PinState raw;
+        if (KEY_PORTS[i] == GPIOA) {
+            raw = (gpio_a_state & KEY_PINS[i]) ? GPIO_PIN_SET : GPIO_PIN_RESET;
+        } else { // GPIOB
+            raw = (gpio_b_state & KEY_PINS[i]) ? GPIO_PIN_SET : GPIO_PIN_RESET;
+        }
 
         // 2) Immediate edge + lock-out debounce
         //    - Accept any transition (press or release) instantly
         //    - Then ignore further changes for DEBOUNCE_TIME_MS
         if (raw != debounced_state[i] && now >= lockout_until[i]) {
-            debounced_state[i]   = raw;
-            lockout_until[i]     = now + DEBOUNCE_TIME_MS;
+            debounced_state[i] = raw;
+            lockout_until[i] = now + DEBOUNCE_TIME_MS;
         }
 
         // 3) Map debounced state into the report (0 = pressed, 1 = released)
         if (debounced_state[i] == GPIO_PIN_RESET) {
-            state->key_states[i / 8] &= ~(1u << (i % 8));
+            // Use bit shifts instead of division and modulo
+            uint8_t byte_idx = i >> 3;      // i / 8
+            uint8_t bit_pos = i & 0x07;     // i % 8
+            state->key_states[byte_idx] &= ~(1u << bit_pos);
+
+            // Count pressed keys for early-exit
+            pressed_count++;
+
+            // Early-exit if we've reached the maximum specified key count
+            // and it's not zero (which means no limit)
+            if (max_keys > 0 && pressed_count >= max_keys) {
+                break;
+            }
         }
     }
 }
@@ -104,7 +142,7 @@ void RightKeyboardScan(RightKeyboardState *state)
 void RightKeyboardI2CTransmit(void)
 {
     // Scan the keyboard to get the latest state
-    RightKeyboardScan(&keyboard_state);
+    RightKeyboardScan6KRO(&keyboard_state, 6);
     
     // Prepare to transmit data when requested by the master
     HAL_I2C_Slave_Transmit_IT(&hi2c1, (uint8_t*)&keyboard_state, sizeof(keyboard_state));
