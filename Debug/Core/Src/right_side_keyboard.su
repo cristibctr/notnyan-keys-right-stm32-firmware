@@ -1,0 +1,6 @@
+../Core/Src/right_side_keyboard.c:39:6:RightKeyboardInit	40	static
+../Core/Src/right_side_keyboard.c:78:6:RightKeyboardScan	40	static
+../Core/Src/right_side_keyboard.c:127:6:RightKeyboardI2CTransmit	8	static
+../Core/Src/right_side_keyboard.c:137:6:HAL_I2C_SlaveTxCpltCallback	16	static
+../Core/Src/right_side_keyboard.c:145:6:HAL_I2C_SlaveRxCpltCallback	16	static
+../Core/Src/right_side_keyboard.c:153:6:HAL_I2C_ErrorCallback	16	static

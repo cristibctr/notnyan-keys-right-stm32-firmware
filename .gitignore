@@ -1,1 +1,6 @@
 .aider*
+cmake-build-debug/*
+*.o
+*.a
+.idea
+Debug/*

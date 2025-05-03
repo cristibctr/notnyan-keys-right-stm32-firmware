@@ -5,6 +5,8 @@
 
 #include "right_side_keyboard.h"
 
+#include <string.h>
+
 // Global keyboard state
 static RightKeyboardState keyboard_state;
 
@@ -29,9 +31,8 @@ static GPIO_TypeDef* const KEY_PORTS[NUM_KEYS] = {
 };
 
 // Debounce tracking
-static uint32_t last_debounce_time[NUM_KEYS] = {0};
-static GPIO_PinState last_key_state[NUM_KEYS] = {GPIO_PIN_SET};
-static GPIO_PinState debounced_key_state[NUM_KEYS] = {GPIO_PIN_SET};
+static uint32_t      lockout_until[NUM_KEYS]       = {0};       /* time-stamp of last accepted edge + DEBOUNCE */
+static GPIO_PinState debounced_state[NUM_KEYS]     = {GPIO_PIN_SET};
 
 // I2C handle from main.c
 extern I2C_HandleTypeDef hi2c1;
@@ -52,11 +53,6 @@ bool RightKeyboardInit(void)
         GPIO_InitStruct.Pull = GPIO_PULLUP;
         GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
         HAL_GPIO_Init(KEY_PORTS[i], &GPIO_InitStruct);
-        
-        // Initialize debounce tracking
-        last_key_state[i] = GPIO_PIN_SET;        // Not pressed
-        debounced_key_state[i] = GPIO_PIN_SET;   // Not pressed
-        last_debounce_time[i] = 0;
     }
     
     // Set up I2C in slave mode with the correct address
@@ -77,48 +73,29 @@ bool RightKeyboardInit(void)
 
 void RightKeyboardScan(RightKeyboardState *state)
 {
-    if (!state) {
-        return;
-    }
+    if (!state) return;
 
-    uint32_t current_time = HAL_GetTick();
-    
-    // Read each key directly
-    for (int i = 0; i < NUM_KEYS; i++) {
-        // Read the current state of the key
-        GPIO_PinState current_state = HAL_GPIO_ReadPin(KEY_PORTS[i], KEY_PINS[i]);
-        
-        // Update the key state in the state structure immediately
-        // This ensures we transmit the current physical state without delay
-        int byteIndex = i / 8;
-        int bitIndex = i % 8;
-        
-        if (current_state == GPIO_PIN_RESET) {
-            // Key is pressed (active low), clear the bit (0 = pressed)
-            state->key_states[byteIndex] &= ~(1 << bitIndex);
-        } else {
-            // Key is not pressed, set the bit (1 = not pressed)
-            state->key_states[byteIndex] |= (1 << bitIndex);
-        }
-        
-        // Handle debouncing separately (doesn't affect transmission)
-        // If the state changed, reset the debounce timer
-        if (current_state != last_key_state[i]) {
-            last_debounce_time[i] = current_time;
+    uint32_t now = HAL_GetTick();
+
+    /* start with “all released” */
+    memset(state->key_states, 0xFF, sizeof(state->key_states));
+
+    for (int i = 0; i < NUM_KEYS; ++i) {
+        // 1) Sample the raw pin
+        GPIO_PinState raw = HAL_GPIO_ReadPin(KEY_PORTS[i], KEY_PINS[i]);
+
+        // 2) Immediate edge + lock-out debounce
+        //    - Accept any transition (press or release) instantly
+        //    - Then ignore further changes for DEBOUNCE_TIME_MS
+        if (raw != debounced_state[i] && now >= lockout_until[i]) {
+            debounced_state[i]   = raw;
+            lockout_until[i]     = now + DEBOUNCE_TIME_MS;
         }
 
-        // If the state has been stable for the debounce period, update the debounced state
-        if ((current_time - last_debounce_time[i]) > DEBOUNCE_TIME_MS) {
-            // Only update if the debounced state is different
-            if (debounced_key_state[i] != current_state) {
-                debounced_key_state[i] = current_state;
-                // Here you could trigger events that should only happen
-                // after debouncing, but not affect the transmitted state
-            }
+        // 3) Map debounced state into the report (0 = pressed, 1 = released)
+        if (debounced_state[i] == GPIO_PIN_RESET) {
+            state->key_states[i / 8] &= ~(1u << (i % 8));
         }
-
-        // Save the current state for next comparison
-        last_key_state[i] = current_state;
     }
 }
 
