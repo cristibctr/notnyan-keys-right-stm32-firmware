@@ -111,6 +111,13 @@ int main(void)
     
     // Scan the keyboard
     RightKeyboardScan6KRO(&state, 6);
+    
+    // Update the global keyboard state in case I2C callback gets triggered
+    // This ensures we always have fresh key data to send
+    HAL_I2C_Slave_Transmit_IT(&hi2c1, (uint8_t*)&state, sizeof(state));
+    
+    // Small delay to avoid busy-waiting and consuming too much power
+    HAL_Delay(10);
   }
   /* USER CODE END 3 */
 }
@@ -172,7 +179,7 @@ static void MX_I2C1_Init(void)
 
   /* USER CODE END I2C1_Init 1 */
   hi2c1.Instance = I2C1;
-  hi2c1.Init.ClockSpeed = 400000;
+  hi2c1.Init.ClockSpeed = 100000;
   hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
   hi2c1.Init.OwnAddress1 = RIGHT_KEYBOARD_I2C_ADDRESS << 1; // Right keyboard I2C address (shifted left for HAL)
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;

@@ -63,8 +63,12 @@ bool RightKeyboardInit(void)
         return false;
     }
     
-    // Start listening for I2C master requests
-    if (HAL_I2C_Slave_Receive_IT(&hi2c1, (uint8_t*)&keyboard_state, sizeof(keyboard_state)) != HAL_OK) {
+    // Update the keyboard state with initial scan
+    RightKeyboardScan6KRO(&keyboard_state, 6);
+    
+    // Start listening for I2C master requests by setting up the transmit buffer
+    // This ensures the slave is ready to respond when the master initiates a read request
+    if (HAL_I2C_Slave_Transmit_IT(&hi2c1, (uint8_t*)&keyboard_state, sizeof(keyboard_state)) != HAL_OK) {
         return false;
     }
     
@@ -152,8 +156,9 @@ void RightKeyboardI2CTransmit(void)
 void HAL_I2C_SlaveTxCpltCallback(I2C_HandleTypeDef *hi2c)
 {
     if (hi2c->Instance == I2C1) {
-        // Transmission complete, prepare for next request
-        HAL_I2C_Slave_Receive_IT(&hi2c1, (uint8_t*)&keyboard_state, sizeof(keyboard_state));
+        // Transmission complete, scan keyboard and prepare for next transmit request
+        RightKeyboardScan6KRO(&keyboard_state, 6);
+        HAL_I2C_Slave_Transmit_IT(&hi2c1, (uint8_t*)&keyboard_state, sizeof(keyboard_state));
     }
 }
 
@@ -168,7 +173,8 @@ void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef *hi2c)
 void HAL_I2C_ErrorCallback(I2C_HandleTypeDef *hi2c)
 {
     if (hi2c->Instance == I2C1) {
-        // Error occurred, reset I2C
-        HAL_I2C_Slave_Receive_IT(&hi2c1, (uint8_t*)&keyboard_state, sizeof(keyboard_state));
+        // Error occurred, reset I2C and prepare for next transmission
+        RightKeyboardScan6KRO(&keyboard_state, 6);
+        HAL_I2C_Slave_Transmit_IT(&hi2c1, (uint8_t*)&keyboard_state, sizeof(keyboard_state));
     }
 }
